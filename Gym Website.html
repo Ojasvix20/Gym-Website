@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's GYM</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS Reset */
+    body {
+        font-family: "Acme", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('wallpapersden.com_muscle-hd-bodybuilding_1366x768.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .left img {
+        height: 60px;
+        width: 90px;
+        ;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 15px;
+        font-size: 20px;
+    }
+
+    .mid {
+        display: block;
+        border: 2px solid rgb(0, 183, 255);
+        width: 700px;
+        margin: 10px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 2px solid rgb(225, 0, 255);
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+    .btn {
+        border: 2px solid black;
+        border-radius: 7px;
+        margin: 0px 10px;
+        background-color: rgb(252, 212, 159);
+        color: rgb(89, 0, 255);
+        padding: 1px 8px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: "Acme", sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(214, 180, 138);
+
+    }
+
+    .container {
+        border: 2px solid greenyellow;
+        color: rgb(83, 0, 184);
+        margin: 106px 50px;
+        padding: 40px 42px;
+        width: 33%;
+        border-radius: 15px;
+    }
+
+    .form-group input {
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+        padding: 2px;
+        border: 1.5px solid black;
+        border-radius: 6px;
+    }
+    .container{text-align: center;}
+</style>
+
+<body>
+    <header class="header">
+        <!-- LEFT BOX FOR LOGO-->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>
+                Ray's Fitness
+            </div>
+        </div>
+
+        <!-- MID BOX FOR NAVBAR -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Centre</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- RIGHT BOX FOR BUTTONS -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">F.A.Q</button>
+        </div>
+
+
+
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in Delhi now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your age">
+                <input type="text" placeholder="Enter your gender">
+                <input type="text" placeholder="Enter your phone number">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
